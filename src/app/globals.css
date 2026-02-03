@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #061225;
+  --foreground: #eaf0ff;
+  --card: rgba(255, 255, 255, 0.06);
+  --card-2: rgba(255, 255, 255, 0.09);
+  --border: rgba(255, 255, 255, 0.12);
+  --muted: rgba(255, 255, 255, 0.08);
+  --muted-foreground: rgba(234, 240, 255, 0.72);
+  --accent: #d4af37;
+  --accent-foreground: #081022;
+  --danger: #ff4d4d;
+  --success: #2ee59d;
+  --ring: rgba(212, 175, 55, 0.45);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-2: var(--card-2);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-danger: var(--danger);
+  --color-success: var(--success);
+  --color-ring: var(--ring);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-urdu: var(--font-urdu);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #061225;
+    --foreground: #eaf0ff;
+    --card: rgba(255, 255, 255, 0.06);
+    --card-2: rgba(255, 255, 255, 0.09);
+    --border: rgba(255, 255, 255, 0.12);
+    --muted: rgba(255, 255, 255, 0.08);
+    --muted-foreground: rgba(234, 240, 255, 0.72);
+    --accent: #d4af37;
+    --accent-foreground: #081022;
+    --danger: #ff4d4d;
+    --success: #2ee59d;
+    --ring: rgba(212, 175, 55, 0.45);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", Roboto,
+    Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.22);
+}
+
+* {
+  outline-color: var(--ring);
+}
+
+.font-urdu {
+  font-family: var(--font-urdu), var(--font-sans), system-ui, -apple-system,
+    "Segoe UI", Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+}
+
+.glass {
+  background: color-mix(in srgb, var(--card) 85%, transparent);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.gold-ring {
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.32), 0 0 0 6px rgba(212, 175, 55, 0.08);
 }

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1b3a"/>
+      <stop offset="0.55" stop-color="#061225"/>
+      <stop offset="1" stop-color="#0b1b3a"/>
+    </linearGradient>
+    <radialGradient id="r" cx="25%" cy="20%" r="60%">
+      <stop offset="0" stop-color="rgba(212,175,55,0.35)"/>
+      <stop offset="1" stop-color="rgba(212,175,55,0)"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#g)"/>
+  <rect width="1200" height="750" fill="url(#r)"/>
+  <g fill="none" stroke="rgba(234,240,255,0.22)" stroke-width="2">
+    <path d="M80 560 C 280 420, 380 640, 560 520 S 900 440, 1120 560"/>
+    <path d="M80 620 C 280 480, 380 700, 560 580 S 900 500, 1120 620"/>
+  </g>
+  <g transform="translate(110,120)">
+    <rect x="0" y="0" width="980" height="510" rx="34" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+    <g transform="translate(70,80)" fill="#d4af37">
+      <circle cx="80" cy="70" r="46" opacity="0.9"/>
+      <path d="M220 105c0-47 38-85 85-85h330c47 0 85 38 85 85s-38 85-85 85H305c-47 0-85-38-85-85z" opacity="0.18"/>
+      <path d="M300 190h520" stroke="#d4af37" stroke-width="10" opacity="0.35"/>
+      <path d="M300 230h420" stroke="#d4af37" stroke-width="10" opacity="0.22"/>
+      <path d="M300 270h340" stroke="#d4af37" stroke-width="10" opacity="0.16"/>
+    </g>
+    <text x="70" y="440" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="22" fill="rgba(234,240,255,0.72)">Prize image placeholder</text>
+    <text x="70" y="475" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="16" fill="rgba(234,240,255,0.55)">Replace with real prize photos later</text>
+  </g>
+</svg>
